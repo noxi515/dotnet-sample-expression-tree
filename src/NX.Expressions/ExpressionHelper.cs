@@ -13,9 +13,9 @@ namespace NX.Expressions
             params Expression<Func<T, bool>>[] expressions)
         {
             var parameter = new ParameterReplacer<T>();
-            var body = e1.Body;
+            var body = Expression.AndAlso(e1.Body, e2.Body);
 
-            foreach (var e in new[] { e2 }.Concat(expressions))
+            foreach (var e in expressions)
             {
                 body = Expression.AndAlso(body, e.Body);
             }
@@ -30,9 +30,9 @@ namespace NX.Expressions
             params Expression<Func<T, bool>>[] expressions)
         {
             var parameter = new ParameterReplacer<T>();
-            var body = e1.Body;
+            var body = Expression.OrElse(e1.Body, e2.Body);
 
-            foreach (var e in new[] { e2 }.Concat(expressions))
+            foreach (var e in expressions)
             {
                 body = Expression.OrElse(body, e.Body);
             }
