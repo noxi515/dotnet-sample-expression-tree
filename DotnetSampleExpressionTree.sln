@@ -9,7 +9,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ソリューション項目
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NX.Expressions", "src\NX.Expressions\NX.Expressions.csproj", "{F1A47B5B-D435-4C98-985A-C77A5EC73D5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NX.Expressions.Tests", "test\NX.Expressions.Tests\NX.Expressions.Tests.csproj", "{B1A2CF2F-E7E6-4A03-823B-E483B4536125}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1A47B5B-D435-4C98-985A-C77A5EC73D5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1A47B5B-D435-4C98-985A-C77A5EC73D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1A47B5B-D435-4C98-985A-C77A5EC73D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1A47B5B-D435-4C98-985A-C77A5EC73D5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1A2CF2F-E7E6-4A03-823B-E483B4536125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1A2CF2F-E7E6-4A03-823B-E483B4536125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1A2CF2F-E7E6-4A03-823B-E483B4536125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1A2CF2F-E7E6-4A03-823B-E483B4536125}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
